@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import jakarta.servlet.GenericServlet;
 import jakarta.servlet.ServletException;
@@ -20,6 +21,12 @@ public class SignupServlet extends GenericServlet{
 		String pwd = req.getParameter("pwd");
 		String newPwd = req.getParameter("cnfPwd");
 		
+<<<<<<< HEAD
+=======
+//		((HttpServletResponse) res).sendRedirect("/login");
+		PrintWriter out = res.getWriter();
+		out.println("Sign-up seccess");
+>>>>>>> new
 	}
 
 }
