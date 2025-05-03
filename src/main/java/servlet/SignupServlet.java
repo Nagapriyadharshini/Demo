@@ -20,11 +20,6 @@ public class SignupServlet extends GenericServlet{
 		String pwd = req.getParameter("pwd");
 		String newPwd = req.getParameter("cnfPwd");
 		
-<<<<<<< HEAD
-		((HttpServletResponse) res).sendRedirect("login");
-=======
-		((HttpServletResponse) res).sendRedirect("/login");
->>>>>>> new
 	}
 
 }
