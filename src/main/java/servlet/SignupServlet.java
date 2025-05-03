@@ -19,6 +19,8 @@ public class SignupServlet extends GenericServlet{
 		long contact = Long.parseLong(req.getParameter("contact"));
 		String pwd = req.getParameter("pwd");
 		String newPwd = req.getParameter("cnfPwd");
+		
+		((HttpServletResponse) res).sendRedirect("/login");
 	}
 
 }
